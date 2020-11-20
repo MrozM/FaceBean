@@ -27,13 +27,9 @@ public class FaceBean extends JComponent {
         int pad = 12;
         int cw = w - pad * 2;
         int ch = h - pad * 2;
-        //g2.setColor(getBackground());
-        if(mColor == true)
-        {
+        if(mColor == true){
             g2.setColor(Color.GREEN);
-        }
-        else
-        {
+        }else{
             g2.setColor(Color.RED);
         }
         g2.fillArc(pad, pad, cw, ch, 0, 360);
@@ -53,7 +49,8 @@ public class FaceBean extends JComponent {
         g2.fillArc(w / 2 - cw * 1 / 8 - er / 2, h / 2 - ch / 4 - er, er, er, 0, 360);
         g2.fillArc(w / 2 + cw * 1 / 8 - er / 2, h / 2 - ch / 4 - er, er, er, 0, 360);
         
-
+     
+       
     }
     
     public int er(){
